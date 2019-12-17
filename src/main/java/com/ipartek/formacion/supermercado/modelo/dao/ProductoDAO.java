@@ -9,7 +9,6 @@ public class ProductoDAO implements IDAO<Producto> {
 	
 	private static ProductoDAO INSTANCE;
 	private ArrayList<Producto> registros;
-	private int indice = 1;
 	
 	
 	private ProductoDAO() {		

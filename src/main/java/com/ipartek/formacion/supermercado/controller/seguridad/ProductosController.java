@@ -54,7 +54,6 @@ public class ProductosController extends HttpServlet {
 		dao = null;
 	}
     
-
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -88,20 +87,19 @@ public class ProductosController extends HttpServlet {
 				case ACCION_LISTAR:
 					listar(request, response);
 					break;
-				case ACCION_ELIMINAR:	
+				case ACCION_ELIMINAR:
 					eliminar(request, response);
 					break;
-				case ACCION_GUARDAR:	
+				case ACCION_GUARDAR:
 					guardar(request, response);
-					
-				case ACCION_IR_FORMULARIO:	
+					break;
+				case ACCION_IR_FORMULARIO:
 					irFormulario(request, response);
+					break;
 				default:
 					listar(request, response);
 					break;
 				}
-				
-				
 				
 				
 			}catch (Exception e) {
@@ -121,11 +119,6 @@ public class ProductosController extends HttpServlet {
 
 	private void irFormulario(HttpServletRequest request, HttpServletResponse response) {
 		
-		//TODO pregutar por pID > 0 recuperar del DAO
-		// si no New Producto()
-		
-		//  	dao.getById(id) => implementar
-		
 		request.setAttribute("producto", new Producto() );
 		vistaSeleccionda = VIEW_FORM;
 		
@@ -133,6 +126,7 @@ public class ProductosController extends HttpServlet {
 
 	private void guardar(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
+	
 		
 	}
 

@@ -45,9 +45,6 @@
 
     <main class="container">
     
-    *** etiqueta BASE ***
-    
-    
     <c:if test="${not empty mensajeAlerta }">
     
 	    <div class="alert alert-${mensajeAlerta.tipo} alert-dismissible fade show mt-3" role="alert">

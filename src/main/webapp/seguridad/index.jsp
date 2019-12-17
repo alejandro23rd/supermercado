@@ -2,6 +2,5 @@
 <%@ include file="/includes/header.jsp" %>   
 
 <h1>DASHBOARD!!</h1>
-<h1>login correcto</h1>
 
 <%@ include file="/includes/footer.jsp" %>   
